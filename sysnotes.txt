@@ -1,0 +1,29 @@
+This is a text file that contains user notes and reminders for vDosPlus users. Feel free to add your own notes here.
+
+vDosPlus is a free general-purpose non-gaming DOS emulator, and you can use it to run your DOS applications.
+
+Default vDosPlus key combinations:
+
+Win+F11 decreases, Win+F12 increases the font and window size. Alternatively, you can use Ctrl+mouse wheel to decrease or increase the window size at the current location instead of being centered.
+Win+Ctrl+left mouse click starts selecting a rectangle block of text; drag the mouse and release the mouse button, and the selected text is copied to the Windows clipboard.
+Win+Ctrl+right mouse click pastes text from the Windows clipboard into the DOS screen, similar to the Win+Ctrl+V shortcut below.
+Win+Ctrl+A copies all text on the DOS screen to the Windows clipboard.
+Win+Ctrl+C copies the text to the right of the cursor to the Windows clipboard.
+Win+Ctrl+V pastes text from the Windows clipboard into the DOS screen.
+Win+Ctrl+S starts printing if the SPOOL option for a printer port is in effect.
+Win+Ctrl+N opens this note file for viewing and editing.
+
+The Win key is by default required for Win+Ctrl+<..> shortcuts, but you can disable this with the WINKEY option in config.txt. You can for example open this note file with Ctrl+N instead of Win+Ctrl+N in the case of WINKEY=OFF.
+
+The Win+Ctrl+left mouse click, Win+Ctrl+A and Win+Ctrl+C shortcuts copy all or part of the screen text to the Windows clipboard by default, but you can change this behavior with the COPYOPEN option in config.txt in order to copy the screen content to a text file (screen.txt) instead which will be automatically opened for viewing and editing.
+
+Specific vDosPlus commands:
+
+ABOUT, CHCP, CMD, LABEL, MEM, SET, SETCFG, SETCOLOR, SETPORT, UNUSE, USE, VER, VRUN
+These are explained by issuing "command /?" (e.g. "SETCFG /?"), or in more detail by "HELP command" (e.g. "HELP SETCFG") at the DOS prompt inside vDosPlus.
+
+Please read README.TXT for more information about vDosPlus. You will find latest information and downloads about vDosPlus at its home page:
+http://www.vdosplus.org/
+
+My usage notes
+--------------

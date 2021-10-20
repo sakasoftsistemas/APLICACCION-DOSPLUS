@@ -1,0 +1,22 @@
+Notes by Edward Mendelson
+=========================
+
+vDosPlus, adapted by Wengier Wu from Jos Schaars' vDos, with long filename support, keyboard-compatibility, and other features
+
+Jos Schaars' vDos is an advanced emulator designed for use with DOS application programs, including databases. It is the only DOS emulator that provides file locking and other features that make it possible to use database software without file corruption.
+
+Wengier Wu's vDosPlus modification of vDos provides support for Windows long filenames; it changes vDos's keyboard handling in order to support programs such as EDIT, QBASIC, and XyWrite, and adds control over keyboard speed; it supports a blinking cursor for those who want such a thing; and it adds many other features, including transparency, optional true italics and bold in some word-processors, and much else. A full list of enhancements and features may be found on the vDosPlus feature list page.
+
+As of November 2017, vDosPlus is no longer readily available, except in an installer designed specifically for use with the XyWrite word-processor. With the approval of Jos Schaars and Wengier Wu, I have built a version of vDosPlus using the original vDos source code combined with Wengier Wu's source code modifications. I have also added a few minor corrections made by to vDos by Jos Schaars after active development of vDosPlus ended. This new build and its supporting files may be downloaded in a Zip archive (updated 16 Feburary 2018). Study the feature list page and the included CONFIG.TXT file for information on the many additional options in vDosPlus.
+
+Source code (for Visual Studio 2015 or 2017) is available for developers by request.
+
+Note: Revisions made since Wengier Wu's last revision in 2017 include: revisions to the logic that opens applications in Windows or vDosPlus; corrections of Floating Point Unit errors; modifications by Sebastián Segura for typing accented Spanish vowels when the vDosPlus country code is 34; a correction in longfilename-handling code.
+
+To install vDosPlus, create a folder at any convenient location (e.g. C:\VDOSPLUS) and copy the contents of the Zip archive into it. Microsoft's copyrighted Consolas fonts are not included in the archive; you may copy CONSOLA*.TTF from your Windows\Fonts folder into your vDosPlus folder, or you may edit CONFIG.TXT to point to the copies of those files in your Windows\Folder (see the supplied CONFIG.TXT for details).
+
+Note: The copy of vDosPlus in this archive may be used as a drop-in replacement for any earlier version installed by the vDosPlus-Xywrite installer.
+
+If you use vDosPlus in a network configuration, you will sometimes see a "nag" screen that cannot be clicked away until you see a border appear around it. If you want this nag screen never to appear, or if you use vDosPlus commercially, you should register your copy with the author of vDos, Jos Schaars.
+
+A description of vDosPlus, with its various configuration options, may be found on the vDosPlus web page.

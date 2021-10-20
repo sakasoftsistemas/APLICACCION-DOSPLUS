@@ -1,0 +1,27 @@
+rem This is essentially the DOS autoexec.bat.
+rem =========================================
+
+rem vDosPlus has one additional command: USE.
+
+rem The USE command assigns vDosPlus drive letters to Windows drives,
+rem folders, or network shares. The command syntax is:
+rem USE <vDosPlus drive letter:> <Windows drive:/folder/network share>\
+
+rem Examples: USE C: D:\dosprog\, USE F: \\server\share\dosprog\.
+
+rem If you assigned another drive letter with USE, you could select it now:
+rem F:
+
+rem vDosPlus C: is by default assigned to the vDosPlus working directory in
+rem Windows. But you can let vDosPlus use the same Windows drive letters in
+rem vDosPlus automatically by setting the USEDRVS option in the config file.
+@echo.
+rem vDosPlus provides support to Windows-style long file names (LFN),
+rem in addition to traditional DOS 8.3 short file names (SFN).
+rem Type HELP for help, or EXIT to close the vDosPlus window.
+rem You may start Doszip Commander by typing DZ from the command line.
+@ECHO OFF
+PATH %PATH%;C:\4DOS;C:\DOSZIP;C:.;..
+SET TEMP=%%TEMP%%
+IF NOT EXIST %TEMP%\NUL SET TEMP=C:.
+ECHO.

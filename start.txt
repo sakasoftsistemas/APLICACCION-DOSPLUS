@@ -1,0 +1,7 @@
+This is Start.exe by Wengier for use with vDosPlus etc.
+
+The software can be freely used and distributed.
+
+Please type Start.exe /? for usage details.
+
+Wengier, 2020

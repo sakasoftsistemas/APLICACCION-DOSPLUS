@@ -1,0 +1,61 @@
+set talk off
+set defa to c:
+clea
+ARCHI="cgapd.dbf   "
+@10,10 SAY "Ingrese Archivo de Datos :" get archi pict "@!"
+read
+numasi=0
+asiento="      "
+select 1 
+use &archi
+select 2
+use cgpc index cgpc
+select 1
+op=" "
+do while op<>"N" .and. op<>"n"
+ clear
+ @2,10 say "Ingrese Numero de Asiento: " get numasi pict "999999"
+ read
+ num=ltrim(str(numasi))
+ asiento=space(6-len(num))+num
+ locate for asiento=n_asi
+ if .not. eof()
+ do while asiento=n_asi
+   if (m_debe+m_haber)=0 
+      @10,10 say "No hay Montos"
+      @12,10 say cod_cta
+      @14,10 say concepto
+      wait
+   endif
+   codi=cod_cta
+   select 2
+   go top
+   find &codi
+   if .not. found()
+      @10,10 say "codigo no existe"
+      select 1
+      @12,10 say cod_cta
+      @14,10 say concepto
+      wait
+    else
+      if resumen
+       @10,10 say "cuenta de Resumen"
+       select 1
+       @12,10 say cod_cta
+       @14,10 say concepto
+       wait
+      endif
+   endif
+   select 1
+   if .not. eof()
+      skip 1
+   endif
+  enddo
+ else
+  @15,10 say "Asiento no existe"
+ endif
+ @20,10 say "Continua [s/n] : " get op pict "!!"
+ read
+enddo
+set talk on
+
